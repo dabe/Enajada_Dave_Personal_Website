@@ -50,6 +50,7 @@
 		display:table;
 	}
 	#title_intro{
+		position: relative;
 		font-family: arial black;
 		font-size: 50px;
 		color:black;
@@ -61,13 +62,22 @@
 	#fname{
 		position: relative;
 		font-family: arial black;
-		font-size: 30px;
+		font-size: 18px;
 		color:black;
 		margin: 0px;
-		text-align: center;
+		text-align: left-side;
 		display:table-cell;
 	}
-	content_container_1{
+	#lname{
+		position: relative;
+		font-family: arial black;
+		font-size: 18px;
+		color:black;
+		margin: 0px;
+		text-align: right-side;
+		display:table-cell;
+	}
+	#content_container_1{
 		
 	}
 	</style>
@@ -82,10 +92,12 @@
 	</div>
 	<div background-color = "white" id = "first_container">
 		<h1 id = "title_intro">Basic Info </h1>
-		
+		<div id = "id_image">
+			
+		</div>
 		<div id="content_container_1">
-			<p id = "fname" ></br>Name: Dave Andre Enajada</p>
-			<p id = "">
+			<p id = "fname" ></br>First Name: Dave Andre </p>
+			<p id = "lname"></br> &nbsp Last Name: Enajada</p>
 		</div>
 	</div>
 	<div id = "pict-2" background = "images/web_home_back.jpg" >
