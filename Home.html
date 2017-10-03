@@ -70,8 +70,27 @@
 		text-align: right-side;
 		display:table-cell;
 	}
-	#content_container_1{
+	
+	#basic_info{
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		display:table;
+		background-attachment: fixed;
+	}
+	img.container_1{
+		position: absolute;
+		right: 1175px;
+		width: 135px;
+		height: 135px;
 		
+	}
+	#container_1{
+		padding: 0;
+		margin: 0;
+		width: 10px;
+		height: 10vh;
+		float: left-side;
 	}
 	@media(max-width: 960px){
 		#container-home{
@@ -79,21 +98,27 @@
 			height: auto;
 		}
 	}
+	
 	</style>
 </head>
 
 
 <body id = "container-home">
 	
-	
-	
 	<div id = "pict-1" background = "images/header.jpg" >
 		<div  id = "header">
-			<div id="content_container_1">
+			<div id="container_1">
+				<img class ="container_1" alt="profile" src="images/logo.png">
 			</div>
+			
+			<h1 id = "basic_info"> Basic Info</h1>
+			
 		</div>
 	</div>
 	
+	<div background-color = "white" id = "basic_info">
+		
+	</div>
 	
 	<div id = "pict-2" background = "images/web_home_back.jpg" >
 	
