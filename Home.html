@@ -36,7 +36,97 @@
 		background-attachment: fixed;
 	}
 	
+	.Basic_info{
+		position: absolute;
+		color: #ffffff;
+		font: 900 30px;
+		font-family: 'arial';
+		font-color: white;
+		font-weight: bold;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		margin-bottom: 24px;
+		text-align: center;
+		right: 950px;
+		top: 35px;
+	}
+	.Basic_info{
+		height: 40px;
+		width: 200px;
+ 		background-image: url(images/head_back.png);  
+	}
+	.Basic_info:hover{
+			color: #d3d3d3;
+	}
+	
+	.skills{
+		position: absolute;
+		color: #ffffff;
+		font: 900 30px;
+		font-family: 'arial';
+		font-color: white;
+		font-weight: bold;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		margin-bottom: 24px;
+		text-align: center;
+		right: 715px;
+		top: 35px;
+	}
+	.skills{
+		height: 40px;
+		width: 200px;
+ 		background-image: url(images/head_back.png);  
+	}
+	.skills:hover{
+			color: #d3d3d3;
+	}
+	
+	.family_background{
+		position: absolute;
+		color: #ffffff;
+		font: 900 30px;
+		font-family: 'arial';
+		font-color: white;
+		font-weight: bold;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		margin-bottom: 24px;
+		text-align: center;
+		right: 490px;
+		top: 35px;
+	}
+	.family_background{
+		height: 80px;
+		width: 200px;
+ 		background-image: url(images/head_back.png);  
+	}
+	.family_background:hover{
+			color: #d3d3d3;
+	}
+	
+	.education{
+		position: absolute;
+		color: #ffffff;
+		font: 900 30px;
+		font-family: 'arial';
+		font-color: white;
+		font-weight: bold;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		margin-bottom: 24px;
+		text-align: center;
+		right: 275px;
+		top: 35px;
+	}
+	.education{
+		height: 40px;
+		width: 200px;
+ 		background-image: url(images/head_back.png);  
+	}
+	.education:hover{
+			color: #d3d3d3;
+	}
+	
 	#header{
+		padding: 0;
+		margin: 0;
 		height: 20vh;
 		width: 100%;
 		display:table;
@@ -71,7 +161,7 @@
 		display:table-cell;
 	}
 	
-	#basic_info{
+	#basic_info_part{
 		height: 100vh;
 		width: 100%;
 		background-size: cover;
@@ -81,8 +171,8 @@
 	img.container_1{
 		position: absolute;
 		right: 1175px;
-		width: 135px;
-		height: 135px;
+		width: 125px;
+		height: 125px;
 		
 	}
 	#container_1{
@@ -92,11 +182,13 @@
 		height: 10vh;
 		float: left-side;
 	}
+	
 	@media(max-width: 960px){
 		#container-home{
 			width: auto;
 			height: auto;
 		}
+		
 	}
 	
 	</style>
@@ -110,13 +202,14 @@
 			<div id="container_1">
 				<img class ="container_1" alt="profile" src="images/logo.png">
 			</div>
-			
-			<h1 id = "basic_info"> Basic Info</h1>
-			
+			<h1 class = "Basic_info"> Basic Info</h1>
+			<h1 class = "skills"> Skills </h1>
+			<h1 class = "family_background"> Family BackGround</h1>
+			<h1 class = "education"> Education</h1>
 		</div>
 	</div>
 	
-	<div background-color = "white" id = "basic_info">
+	<div background-color = "white" id = "basic_info_part">
 		
 	</div>
 	
