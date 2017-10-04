@@ -12,9 +12,9 @@
 	}
 
 	#pict-1{
-		height: 100vh;
+		height: 110vh;
 		width: 100%;
-		background-image: url(images/header.jpg);
+		background-image: url(images/head.jpg);
 		background-size: cover;
 		display:table;
 		background-attachment: fixed;
@@ -36,101 +36,46 @@
 		background-attachment: fixed;
 	}
 	
-	.Basic_info{
-		position: absolute;
-		color: #ffffff;
-		font: 900 30px;
-		font-family: 'arial';
-		font-color: white;
-		font-weight: bold;
-		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-		margin-bottom: 24px;
-		text-align: center;
-		right: 950px;
-		top: 35px;
-	}
-	.Basic_info{
-		height: 40px;
-		width: 200px;
- 		background-image: url(images/head_back.png);  
-	}
-	.Basic_info:hover{
-			color: #d3d3d3;
-	}
 	
-	.skills{
-		position: absolute;
-		color: #ffffff;
-		font: 900 30px;
-		font-family: 'arial';
-		font-color: white;
-		font-weight: bold;
-		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-		margin-bottom: 24px;
-		text-align: center;
-		right: 715px;
-		top: 35px;
-	}
-	.skills{
-		height: 40px;
-		width: 200px;
- 		background-image: url(images/head_back.png);  
-	}
-	.skills:hover{
-			color: #d3d3d3;
-	}
-	
-	.family_background{
-		position: absolute;
-		color: #ffffff;
-		font: 900 30px;
-		font-family: 'arial';
-		font-color: white;
-		font-weight: bold;
-		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-		margin-bottom: 24px;
-		text-align: center;
-		right: 490px;
-		top: 35px;
-	}
-	.family_background{
-		height: 80px;
-		width: 200px;
- 		background-image: url(images/head_back.png);  
-	}
-	.family_background:hover{
-			color: #d3d3d3;
-	}
-	
-	.education{
-		position: absolute;
-		color: #ffffff;
-		font: 900 30px;
-		font-family: 'arial';
-		font-color: white;
-		font-weight: bold;
-		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-		margin-bottom: 24px;
-		text-align: center;
-		right: 275px;
-		top: 35px;
-	}
-	.education{
-		height: 40px;
-		width: 200px;
- 		background-image: url(images/head_back.png);  
-	}
-	.education:hover{
-			color: #d3d3d3;
-	}
 	
 	#header{
 		padding: 0;
-		margin: 0;
-		height: 20vh;
+		margin-top: 100 px;
+		height: 100px;
 		width: 100%;
 		display:table;
 		background-image: url(images/head_back.png);
+		
+	}
+	#menu {
+		background: #000033;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+		height: 100px;
+		margin: 0;
+		position: absolute;
+		opacity: 0.6;
+	}
+	li{
+		float: left;
+		margin-top: 30px;
+	}
+	a {
+		width: 150px;
+		color: white;
+		display: block;
+		text-decoration: none;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+		border-radius: 10px;
+		font-family: arial;
+		font-weight: bold;		
+	}
+	a:hover{
+		background: #669900;
+		trasition: 0.6s;
 	}
 	#title_intro{
 		position: relative;
@@ -170,10 +115,10 @@
 	}
 	img.container_1{
 		position: absolute;
-		right: 1175px;
-		width: 125px;
-		height: 125px;
-		
+		right: 900px;
+		width: 300px;
+		height: 300px;
+		 
 	}
 	#container_1{
 		padding: 0;
@@ -182,7 +127,19 @@
 		height: 10vh;
 		float: left-side;
 	}
-	
+	.about_me {
+		margin: 0;
+		padding: 0;
+	}
+	#about_me{
+		position: absolute;
+		font-family: arial;
+		font-weight: bold;
+		font-size: 30px;
+		color: Black;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		right: 700px;
+	}
 	@media(max-width: 960px){
 		#container-home{
 			width: auto;
@@ -198,19 +155,23 @@
 <body id = "container-home">
 	
 	<div id = "pict-1" background = "images/header.jpg" >
-		<div  id = "header">
-			<div id="container_1">
-				<img class ="container_1" alt="profile" src="images/logo.png">
-			</div>
-			<h1 class = "Basic_info"> Basic Info</h1>
-			<h1 class = "skills"> Skills </h1>
-			<h1 class = "family_background"> Family BackGround</h1>
-			<h1 class = "education"> Education</h1>
+		<div  class = "header">
+			<ul id = "menu">
+				<li> <a href = "#"> About me</a></li>
+				<li> <a href = "#"> Basic Info</a></li>
+				<li> <a href = "#"> Education</a></li>
+				<li> <a href = "#"> Skills</a></li>
+			</ul>
 		</div>
 	</div>
 	
 	<div background-color = "white" id = "basic_info_part">
-		
+		<div id="container_1">
+				<img class ="container_1" alt="profile" src="images/dave_option2_copy.png">
+		</div>
+		<div class = "about_me">
+			<h1 id = "about_me"> About Me</h1>
+		</div>
 	</div>
 	
 	<div id = "pict-2" background = "images/web_home_back.jpg" >
