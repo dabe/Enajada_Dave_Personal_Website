@@ -38,14 +38,14 @@
 	
 	
 	
-	#header{
+	#header{	
 		padding: 0;
 		margin-top: 100 px;
 		height: 100px;
 		width: 100%;
 		display:table;
 		background-image: url(images/head_back.png);
-		
+		background-attachment: 
 	}
 	#menu {
 		background: #000033;
@@ -58,7 +58,7 @@
 		opacity: 0.6;
 	}
 	li{
-		float: left;
+		float: right;
 		margin-top: 30px;
 	}
 	a {
@@ -77,37 +77,10 @@
 		background: #669900;
 		trasition: 0.6s;
 	}
-	#title_intro{
-		position: relative;
-		font-family: arial black;
-		font-size: 50px;
-		color:black;
-		margin: 0px;
-		text-align: center;
-		display:table-cell;
-		position: center;
-	}
-	#fname{
-		position: relative;
-		font-family: arial black;
-		font-size: 18px;
-		color:black;
-		margin: 0px;
-		text-align: left-side;
-		display:table-cell;
-	}
-	#lname{
-		position: relative;
-		font-family: arial black;
-		font-size: 18px;
-		color:black;
-		margin: 0px;
-		text-align: right-side;
-		display:table-cell;
-	}
+	
 	
 	#basic_info_part{
-		height: 100vh;
+		height: 70vh;
 		width: 100%;
 		background-size: cover;
 		display:table;
@@ -131,14 +104,34 @@
 		margin: 0;
 		padding: 0;
 	}
+	.about_container{
+		position: absolute;
+		width: 1000px;
+		height: 100%px;
+		margin: 0;
+		padding: 0;
+		right: -100px;
+	}
+	
 	#about_me{
 		position: absolute;
+		justify-content: justify;
 		font-family: arial;
 		font-weight: bold;
 		font-size: 30px;
 		color: Black;
 		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-		right: 700px;
+		right: 500px;
+	}
+	#parag {
+		position: absolute;
+		font-family: arial;
+		font-weight: bold;
+		font-size: 20px;
+		color: Black;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+		right: 200px;
+		float: right;
 	}
 	@media(max-width: 960px){
 		#container-home{
@@ -171,6 +164,15 @@
 		</div>
 		<div class = "about_me">
 			<h1 id = "about_me"> About Me</h1>
+			
+		</div>
+		<div class = "about_container">
+			<p id = "parag"><br><br> &nbsp &nbsp &nbsp &nbsp My name is Dave Andre Enajada and I am student
+			at University of Southeasthern Philippines. Seventhteen years
+			of age. Living peacefully in Toril. 
+			<br> &nbsp &nbsp &nbsp &nbsp I guess you're here because you want to me well.
+			I'm not good in describing myself but I will showcase to you
+			some importants on my life.</p>
 		</div>
 	</div>
 	
