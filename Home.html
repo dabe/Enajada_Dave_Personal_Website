@@ -213,6 +213,40 @@
 		height: 100px;
 		float: left;
 	}
+	#s{
+		font-family: arial;
+		color: white;
+		font-weight: bold;
+		font-size: 50px;
+		text-shadow: 4px 8px 16px rgba(0,0,0,0.6);
+		position: absolute;
+		right: 900px;
+	}
+	.skills{
+		height: 100vh;
+		width: 100%;
+		background-color: white;
+		background-attachment: fixed;
+		background-image: url(images/skills_back.jpg);
+		background-size: cover;
+	}
+	
+	#l{
+		list-style: none;
+		color: white;
+		font-family: arial;
+		text-shadow: 0px 8px 16px rgba(0,0,0,0.6);
+	}
+	#s_list{
+		display: table;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		right: -100px;
+		top: 2950px;
+	}
 	@media(max-width: 960px){
 		#container-home{
 			width: auto;
@@ -304,8 +338,18 @@
 		<img id = "book" alt = "<<Logo here>>" src = "images/book.gif"> </img>
 	
 	</div>
-	<div> 
+	<div class = "skills"> 
 		<h1 id = "s"> Skills<h1>
+		<div id = "s_list">
+			<ul id = "l">
+				<li> <br>Knows C++ Programming</li>
+				<li> <br>Knows Object-Oriented Programming</li>
+				<li> <br>Knows html, css, and php</li>
+				<li> <br>Knows database management</li>
+				<li> <br>Knows editing image (Photoshop)</li>
+			</ul>
+		</div>
+		
 	</div>
 	
 </body>
